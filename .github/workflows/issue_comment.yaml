@@ -25,6 +25,7 @@ jobs:
   comment-with-gh-api:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Create comment with GH API
         run: |
           gh api -X POST \
